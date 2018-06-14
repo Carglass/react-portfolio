@@ -11,21 +11,23 @@ const MainView = props => {
       <Grid container justify={"center"}>
         <Grid item xs={11}>
           <Paper elevation={4}>
-            <p>
+            <div className="aboutContent">
               <img src={"./images/me.jpg"} />
-              System Engineer with five years of experience in medical IT. My
-              expertise on the products, the regulatory constraints, and the
-              business needs, combined with my ability to find adapted
-              solutions, has allowed me to grow into a technical leader. Known
-              to be a reliable colleague who is always happy to share my
-              knowledge and expertise to maximize efficiency. Proven ability to
-              successfully train newcomers in my department. I also keep on
-              building new skills, currently learning about full-stack web
-              development like React, Express, Django, Mongo. An insatiable
-              learner, I am looking for new challenges, new products, that will
-              allow me to further dive into high technology, and solutions that
-              help people when life is the most challenging.
-            </p>
+              <Typography variant={"body2"}>
+                System Engineer with five years of experience in medical IT. My
+                expertise on the products, the regulatory constraints, and the
+                business needs, combined with my ability to find adapted
+                solutions, has allowed me to grow into a technical leader. Known
+                to be a reliable colleague who is always happy to share my
+                knowledge and expertise to maximize efficiency. Proven ability
+                to successfully train newcomers in my department. I also keep on
+                building new skills, currently learning about full-stack web
+                development like React, Express, Django, Mongo. An insatiable
+                learner, I am looking for new challenges, new products, that
+                will allow me to further dive into high technology, and
+                solutions that help people when life is the most challenging.
+              </Typography>
+            </div>
           </Paper>
         </Grid>
       </Grid>
