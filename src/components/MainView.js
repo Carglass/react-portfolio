@@ -3,6 +3,7 @@ import "./../App.css";
 import Typography from "@material-ui/core/Typography";
 import { Paper, Grid } from "@material-ui/core";
 import withTheme from "@material-ui/core/styles/withTheme";
+import Portfolio from "./Portfolio";
 import "typeface-roboto";
 
 const MainView = props => {
@@ -33,7 +34,7 @@ const MainView = props => {
       </Grid>
     );
   } else if (props.page === 1) {
-    return <Typography variant={"body1"}>Portfolio</Typography>;
+    return <Portfolio />;
   } else if (props.page === 2) {
     return <Typography variant={"body1"}>Contact</Typography>;
   }

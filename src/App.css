@@ -7,6 +7,7 @@
   padding: 15px;
 }
 
-.aboutContent p {
-  margin-left: 15px;
+.PortfolioContent {
+  display: flex;
+  padding: 15px;
 }
