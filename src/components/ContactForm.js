@@ -24,33 +24,42 @@ class ContactForm extends Component {
   render() {
     return (
       <Grid container spacing={32} justify={"center"}>
-        <Grid item xs={11} className="projectzone">
-          <Paper elevation={4}>
-            <Grid container spacing={16}>
+        <Grid item xs={11}>
+          <Paper elevation={4} className="contact-paper">
+            <Grid container spacing={16} direction="column">
+              <Grid item xs={4}>
+                <Typography variant={"display2"}>Contact</Typography>
+              </Grid>
               <form noValidate autoComplete="off">
-                <TextField
-                  id="name"
-                  label="Name"
-                  value={this.state.name}
-                  onChange={this.handleChange("name")}
-                  margin="normal"
-                />
-                <TextField
-                  id="email"
-                  label="Email"
-                  value={this.state.email}
-                  onChange={this.handleChange("email")}
-                  margin="normal"
-                />
-                <TextField
-                  id="content"
-                  label="Your message"
-                  value={this.state.content}
-                  multiline
-                  rows="4"
-                  onChange={this.handleChange("content")}
-                  margin="normal"
-                />
+                <Grid item xs={4}>
+                  <TextField
+                    id="name"
+                    label="Name"
+                    value={this.state.name}
+                    onChange={this.handleChange("name")}
+                    margin="normal"
+                  />
+                </Grid>
+                <Grid item xs={4}>
+                  <TextField
+                    id="email"
+                    label="Email"
+                    value={this.state.email}
+                    onChange={this.handleChange("email")}
+                    margin="normal"
+                  />
+                </Grid>
+                <Grid item xs={4}>
+                  <TextField
+                    id="content"
+                    label="Your message"
+                    value={this.state.content}
+                    multiline
+                    rows="4"
+                    onChange={this.handleChange("content")}
+                    margin="normal"
+                  />
+                </Grid>
               </form>
             </Grid>
           </Paper>
