@@ -22,7 +22,7 @@ class Portfolio extends Component {
         {
           title: "My Spots",
           description:
-            "Want to know at any time how fare you are from your favorite spots?",
+            "Want to know at any time how far you are from your favorite spots?",
           img: "./images/myspots.png",
           githubLink: "https://github.com/Carglass/mySpots"
         }
