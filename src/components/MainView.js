@@ -52,12 +52,26 @@ const MainView = props => {
               <Grid item xs={12}>
                 <Grid container spacing={32} justify="space-around">
                   <Grid item xs={12}>
-                    <FontAwesomeIcon icon={faGithub} className={"icon"} />
-                    <FontAwesomeIcon icon={faLinkedin} className={"icon"} />
-                    <FontAwesomeIcon
-                      icon={faStackOverflow}
-                      className={"icon"}
-                    />
+                    <a href={"https://github.com/Carglass"}>
+                      <FontAwesomeIcon icon={faGithub} className={"icon"} />
+                    </a>
+                    <a
+                      href={
+                        "https://www.linkedin.com/in/maxime-burlat-56028748"
+                      }
+                    >
+                      <FontAwesomeIcon icon={faLinkedin} className={"icon"} />
+                    </a>
+                    <a
+                      href={
+                        "https://stackexchange.com/users/7440262/maxime-burlat"
+                      }
+                    >
+                      <FontAwesomeIcon
+                        icon={faStackOverflow}
+                        className={"icon"}
+                      />
+                    </a>
                   </Grid>
                 </Grid>
               </Grid>
