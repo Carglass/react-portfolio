@@ -14,13 +14,13 @@ class Portfolio extends Component {
           title: "Kettlecat",
           description:
             "Who never dreamt of having a place to store and share their boilerplates?",
-          img: "/images/me.jpg"
+          img: "/images/kettlecat.png"
         },
         {
           title: "My Spots",
           description:
             "Want to know at any time how fare you are from your favorite spots?",
-          img: "./images/me.jpg"
+          img: "./images/myspots.png"
         }
       ]
     };

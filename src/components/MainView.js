@@ -5,6 +5,7 @@ import { Paper, Grid } from "@material-ui/core";
 import withTheme from "@material-ui/core/styles/withTheme";
 import Portfolio from "./Portfolio";
 import "typeface-roboto";
+import ContactForm from "./ContactForm";
 
 const MainView = props => {
   if (props.page === 0) {
@@ -36,7 +37,7 @@ const MainView = props => {
   } else if (props.page === 1) {
     return <Portfolio />;
   } else if (props.page === 2) {
-    return <Typography variant={"body1"}>Contact</Typography>;
+    return <ContactForm />;
   }
 };
 
