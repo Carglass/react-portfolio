@@ -30,7 +30,7 @@ class Portfolio extends Component {
 
   listProjects() {
     return this.state.projects.map(project => (
-      <Grid item xs={11} className="projectzone">
+      <Grid item xs={10} className="projectzone">
         <Paper elevation={4}>
           <Grid container spacing={16}>
             <Grid item xs={3}>

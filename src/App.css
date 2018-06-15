@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.aboutContent {
-  display: flex;
-  padding: 15px;
-}
-
 .PortfolioContent {
   display: flex;
   padding: 15px;
@@ -14,4 +9,9 @@
 
 .contact-paper {
   padding: 20px;
+}
+
+.icon {
+  font-size: 6em;
+  padding: 0px 100px;
 }

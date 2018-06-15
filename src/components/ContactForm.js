@@ -24,7 +24,7 @@ class ContactForm extends Component {
   render() {
     return (
       <Grid container spacing={32} justify={"center"}>
-        <Grid item xs={11}>
+        <Grid item xs={10}>
           <Paper elevation={4} className="contact-paper">
             <Grid container spacing={16} direction="column">
               <Grid item xs={4}>
