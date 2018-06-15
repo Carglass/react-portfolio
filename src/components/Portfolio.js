@@ -24,24 +24,40 @@ class Portfolio extends Component {
         }
       ]
     };
+
+    this.listProjects = this.listProjects.bind(this);
+  }
+
+  listProjects() {
+    return this.state.projects.map(project => (
+      <Grid item xs={11} className="projectzone">
+        <Paper elevation={4}>
+          <Grid container spacing={16}>
+            <Grid item xs={3}>
+              <img src={project.img} />
+            </Grid>
+            <Grid item xs={9}>
+              <Grid container>
+                <Grid item xs={12}>
+                  <Typography variant={"display1"}>{project.title}</Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant={"body2"}>
+                    {project.description}
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Paper>
+      </Grid>
+    ));
   }
 
   render() {
     return (
-      <Grid container justify={"center"}>
-        <Grid item xs={11}>
-          <Paper elevation={4}>
-            <div className="PortfolioContent">
-              <img src={this.state.projects[0].img} />
-              <Typography variant={"display1"}>
-                {this.state.projects[0].title}
-              </Typography>
-              <Typography variant={"body2"}>
-                {this.state.projects[0].description}
-              </Typography>
-            </div>
-          </Paper>
-        </Grid>
+      <Grid container spacing={32} justify={"center"}>
+        {this.listProjects()}
       </Grid>
     );
   }

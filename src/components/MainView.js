@@ -9,7 +9,7 @@ import "typeface-roboto";
 const MainView = props => {
   if (props.page === 0) {
     return (
-      <Grid container justify={"center"}>
+      <Grid container spacing={32} justify={"center"}>
         <Grid item xs={11}>
           <Paper elevation={4}>
             <div className="aboutContent">
