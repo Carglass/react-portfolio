@@ -30,11 +30,17 @@ class ContactForm extends Component {
               <Grid item xs={4}>
                 <Typography variant={"display2"}>Contact</Typography>
               </Grid>
-              <form noValidate autoComplete="off">
+              <form
+                noValidate
+                autoComplete="off"
+                action="https://formspree.io/maximeburlat@gmail.com"
+                method="POST"
+              >
                 <Grid item xs={4}>
                   <TextField
                     id="name"
                     label="Name"
+                    name="name"
                     value={this.state.name}
                     onChange={this.handleChange("name")}
                     margin="normal"
@@ -44,6 +50,7 @@ class ContactForm extends Component {
                   <TextField
                     id="email"
                     label="Email"
+                    name="_replyto"
                     value={this.state.email}
                     onChange={this.handleChange("email")}
                     margin="normal"
@@ -53,12 +60,16 @@ class ContactForm extends Component {
                   <TextField
                     id="content"
                     label="Your message"
+                    name="content"
                     value={this.state.content}
                     multiline
                     rows="4"
                     onChange={this.handleChange("content")}
                     margin="normal"
                   />
+                </Grid>
+                <Grid item xs={4}>
+                  <input type="submit" value="Send" />
                 </Grid>
               </form>
             </Grid>
