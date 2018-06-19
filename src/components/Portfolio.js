@@ -17,14 +17,16 @@ class Portfolio extends Component {
           description:
             "Who never dreamt of having a place to store and share their boilerplates?",
           img: "/images/kettlecat.png",
-          githubLink: "https://github.com/Carglass/kettlecat"
+          githubLink: "https://github.com/Carglass/kettlecat",
+          appLink: "https://kettlecat.herokuapp.com"
         },
         {
           title: "My Spots",
           description:
             "Want to know at any time how far you are from your favorite spots?",
           img: "./images/myspots.png",
-          githubLink: "https://github.com/Carglass/mySpots"
+          githubLink: "https://github.com/Carglass/mySpots",
+          appLink: "https://carglass.github.io/mySpots/"
         }
       ]
     };
@@ -44,7 +46,7 @@ class Portfolio extends Component {
               <Grid container>
                 <Grid item xs={12}>
                   <Typography variant={"display1"}>
-                    {project.title}{" "}
+                    <a href={project.appLink}>{project.title}</a>{" "}
                     <a href={project.githubLink}>
                       <FontAwesomeIcon icon={faGithub} />
                     </a>
